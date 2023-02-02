@@ -1,0 +1,41 @@
+body{
+    margin: 80px;
+    background-color: lavender;
+}
+
+table{
+    border: 1px solid indigo;
+    font-family: Helvetica;
+    font-size: 20px;
+    margin: 70px;
+}
+
+th{
+    background-color:plum;
+}
+
+td{
+    border: 1px solid mediumpurple;
+}
+
+h1{
+    color:Indigo;
+    text-align: center;
+    font-family: "Abril Fatface", Helvetica, sans-serif;
+    font-size: 45px;
+}
+
+h2, form{
+    font-family: Alata, Arial;
+}
+
+.code {
+    color: blueviolet;
+    background-color: thistle;
+    font-family: "Lucida Console";
+}
+
+
+h2.head {
+    text-align:center;
+}

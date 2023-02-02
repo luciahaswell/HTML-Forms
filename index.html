@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <link href="./styles.css" rel="stylesheet" type="text/css">
+        <title>HTML Forms</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alata&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+        <h2 class="head">Learn about the types of forms you can use in HTML and how to use them</h2>
+        <table>
+            <thead>
+                <tr>
+                <th>Type</th>
+                <th>User Input</th>
+                <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Text</td>
+                    <td>Single row field for text input</td>
+                    <td class="code">&lt;form&gt;&lt;label for="text-input"&gt;This is a text form:&lt;/label&gt;
+                        &lt;input type="text" name="text-input" id="text-input"&gt;&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>Single row field that censors input</td>
+                    <td class="code">&lt;form&gt;&lt;label for="user-pw"&gt;This is a password form:&lt;/label&gt;
+                        &lt;input type="password" name="user-pw" id="user-pw"&gt;&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>Number</td>
+                    <td>Single row field for number input</td>
+                    <td class="code">&lt;form&gt;&lt;label for="num-input"&gt;This is a number input form:&lt;/label&gt;
+                        &lt;input type="number" name="num-input" id="num-input"&gt;&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>Range</td>
+                    <td>Slider to select from a range of numbers</td>
+                    <td class="code">&lt;form&gt;&lt;span&gt;Left Value&lt;/span&gt;
+                        &lt;input type="range" name="num-input" id="num-input"&gt;
+                        &lt;span&gt;Right Value&lt;/span&gt;&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>Checkbox</td>
+                    <td>Single checkbox that can be paired with other checkboxes</td>
+                    <td class="code">&lt;form&gt;&lt;input type="checkbox" name="check1" id="check1" value="check1"&gt;
+                        &lt;label for="check1"&gt;Checkbox 1&lt;/label&gt;
+                        &lt;input type="checkbox" name="check2" id="check2" value="check2"&gt;
+                        &lt;label for="check2"&gt;Checkbox 2&lt;/label&gt;&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>Radio</td>
+                    <td>Radio button that can be paired with other radio buttons</td>
+                    <td class="code">&lt;form&gt;&lt;span&gt;Title for Radio Button &lt;/span&gt;
+                        &lt;br&gt;
+                        &lt;input type="radio" name="option1" id="option1" value="option1"&gt;
+                        &lt;label for="option1"&gt;Option 1 &lt;/label&gt;
+                        &lt;input type="radio" name="option2" id="option2" value="option2"&gt;
+                        &lt;label for="option2"&gt;Option 2 &lt;/label&gt;&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>Text with list attribute</td>
+                    <td>Lets user choose from a list of options</td>
+                    <td class="code">&lt;form&gt;&lt;label for="listinput"&gt;List Title&lt;/label&gt;
+                        &lt;input list="listy" id="listinput" name="listinput"&gt;
+                        &lt;datalist id="listy"&gt;
+                        &lt;option value="option1"&gt;&lt;/option&gt;
+                        &lt;option value="option2"&gt;&lt;/option&gt;
+                        &lt;option value="option3"&gt;&lt;/option&gt;
+                        &lt;/datalist&gt;&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>Submit</td>
+                    <td>creates a submit button</td>
+                    <td class="code">&lt;form&gt;&lt;input type="submit" value="Submit"&gt;&lt;/form&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>What these look like:</h2>
+
+        <h3>Text Input:</h3>
+            <form>
+                <label for="text-input">This is a text form:</label> 
+                <input type="text" name="text-input" id="text-input">
+            </form>
+        <h3>Password Input:</h3>
+            <form>
+                <label for="user-pw">This is a password form:</label> 
+                <input type="password" name="user-pw" id="user-pw">
+            </form>
+        <h3>Number Input:</h3>
+            <form>
+                <label for="num-input">This is a number input form:</label> 
+                <input type="number" name="num-input" id="num-input">
+            </form>
+        <h3>Range Slider:</h3>
+            <form>
+                <span>Left Value</span> 
+                <input type="range" name="num-input" id="num-input"> 
+                <span>Right Value</span>
+            </form>
+        <h3>Checkbox:</h3>
+            <form>
+                <input type="checkbox" name="check1" id="check1" value="check1"> 
+                <label for="check1">Checkbox 1</label>
+                <br>
+                <input type="checkbox" name="check2" id="check2" value="check2"> 
+                <label for="check2">Checkbox 2</label>
+            </form>
+        <h3>Radio Button:</h3>
+            <form>
+                <span>Title for Radio Button </span> 
+                <br> 
+                <input type="radio" name="option1" id="option1" value="option1"> 
+                <label for="option1">Option 1 </label><br>
+                <input type="radio" name="option2" id="option2" value="option2"> 
+                <label for="option2">Option 2 </label>
+            </form>
+        <h3>Dropdown List:</h3>
+            <form>
+                <label for="listinput">List Title</label> 
+                <input list="listy" id="listinput" name="listinput"> 
+                <datalist id="listy"> 
+                    <option value="option1"></option>
+                    <option value="option2"></option>
+                    <option value="option3"></option> 
+                </datalist>
+            </form>
+        <h3>Submit:</h3>
+            <form>
+                <input type="submit" value="Submit">
+            </form>
+    </body>
+</html>
